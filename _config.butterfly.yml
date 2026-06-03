@@ -24,13 +24,13 @@ menu:
 
 code_blocks:
   # 代码块主题: darker / pale night / light / ocean / false
-  theme: light
+  theme: pale night
   # 是否使用 Mac 风格
   macStyle: false
   # 代码块高度限制（单位: px）
   height_limit: false
   # 是否自动换行
-  word_wrap: false
+  word_wrap: true
 
   # 工具栏
   # 是否显示复制按钮

@@ -3,17 +3,17 @@
 ## 源码：https://github.com/hexojs/hexo
 
 # 站点信息
-title: Hexo
-subtitle: ''
-description: ''
+title: 花生莲子粥の小窝
+subtitle: '与世无争，不染于泥' # 网站标题描述
+description: '与世无争，不染于泥' # 右侧作者页名字下的描述
 keywords:
-author: John Doe
-language: en
-timezone: ''
+author: 花生莲子粥
+language: zh-CN
+timezone: 'Asia/Shanghai'
 
 # URL 设置
 ## 在此处设置站点 URL。例如，若使用 GitHub Page，请将 url 设置为 'https://username.github.io/project'
-url: http://example.com
+url: https://blog.hslzz.cn
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
@@ -30,38 +30,77 @@ code_dir: downloads/code
 i18n_dir: :lang
 skip_render:
 
+# --------------------------------------
 # 文章设置
-new_post_name: :title.md # 新文章的默认文件名
+# --------------------------------------
+
+# 新文章的默认文件名,可使用占位符（如 :year、:month、:day、:title）自定义命名规则。
+new_post_name: :title.md
+
+# 新建文章时的默认布局。Hexo 有三种预设布局：post（文章）、page（页面）和 draft（草稿），分别对应不同的存储路径。
 default_layout: post
-titlecase: false # 是否将标题转换为首字母大写格式
+
+# 是否将文章标题自动转换为首字母大写格式（Titlecase）。设为 false 表示保留原始大小写。
+titlecase: false
+
 external_link:
-  enable: true # 是否在新标签页中打开外部链接
-  field: site # 适用范围：site（全站）或 post（仅文章）
+  # 是否在新标签页中打开外部链接
+  enable: true
+  # 适用范围：site（全站）或 post（仅文章）
+  field: site
+  # 排除特定域名，使其不在新标签页中打开。支持字符串或数组格式，例如 'example.com' 或 ['example.com', 'foo.com']。
   exclude: ''
+
+# 新建文章时，对文件名的大小写转换规则。0：不转换；1：转换为小写；2：转换为大写。
 filename_case: 0
+
+# 是否在生成站点时渲染草稿（draft）文章。设为 true 会同时渲染草稿，但生产环境中建议保持 false。预览草稿也可通过 --draft 参数实现。
 render_drafts: false
+
+# 是否启用文章资源文件夹。设为 true 后，每次使用 hexo new 创建文章时，会自动生成一个与文章同名的文件夹，用于存放该文章的图片等资源。
 post_asset_folder: false
+
+# 生成的链接是否使用相对路径。设为 true 时，链接会根据当前页面位置生成为相对路径（如 ../../css/style.css）。
 relative_link: false
+
+# 是否显示发布日期为未来时间的文章。设为 false 后，未到达发布日期的文章不会显示，可用于定时发布功能。
 future: true
+
+# 指定代码语法高亮库。Hexo v7.0.0 及以上版本支持 highlight.js 或 prismjs。设为空则禁用内建高亮。
 syntax_highlighter: highlight.js
+
+
 highlight:
+  # 是否在代码块中显示行号。
   line_number: true
+  # 是否自动检测代码块的语言类型。设为 true 会增加处理时间。
   auto_detect: false
+  # 将代码块中的制表符（tab）替换为指定数量的空格。留空表示不做替换。
   tab_replace: ''
+  # 是否在代码块外层包裹 <figure> 和 <figcaption> 等 HTML 标签。设为 false 仅输出 <pre><code> 结构。
   wrap: true
+  # 是否将 highlight.js 的 CSS 类名（如 'hljs'）添加到代码块的 <code> 标签上。用于兼容 highlight.js 的主题样式。
   hljs: false
+
 prismjs:
+  # 是否在服务端进行预渲染（预处理）。true 表示在服务端完成高亮，false 表示在浏览器端进行高亮。
   preprocess: true
+  # 是否在代码块中显示行号。
   line_number: true
+  # 将代码块中的制表符（tab）替换为指定数量的空格。留空表示不做替换。
   tab_replace: ''
 
+
+# --------------------------------------
 # 首页设置
-# path: 博客首页的根路径（默认为 ''）
-# per_page: 每页显示的文章数量（设为 0 将关闭分页功能）
-# order_by: 文章的排序方式（默认按日期降序排列）
+# --------------------------------------
+
 index_generator:
+  # 博客首页的根路径（默认为 ''）
   path: ''
+  # 每页显示的文章数量（设为 0 将关闭分页功能）
   per_page: 10
+  # 文章的排序方式（默认按日期降序排列）
   order_by: -date
 
 # 分类与标签设置
@@ -95,7 +134,7 @@ ignore:
 # 扩展
 ## 插件列表：https://hexo.io/plugins/
 ## 主题列表：https://hexo.io/themes/
-theme: landscape
+theme: butterfly
 
 # 部署设置
 ## 文档：https://hexo.io/zh-cn/docs/one-command-deployment
