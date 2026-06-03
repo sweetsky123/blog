@@ -23,26 +23,16 @@ jobs:
       with:
         ref: main
         
-    - name: 缓存项目 npm 包
-      id: cache-node-modules
-      uses: actions/cache@v4
-      with:
-        path: node_modules
-        key: ${{ runner.os }}-${{ matrix.node-version }}-nodeModules-${{ hashFiles('package-lock.json') }}-${{ hashFiles('package.json') }}
-        restore-keys: |
-          ${{ runner.os }}-${{ matrix.node-version }}-nodeModules-
-
     - name: 安装 Node
       uses: actions/setup-node@main
       with:
-        node-version: "20.x"
+        node-version: 'lts/*'
 
     - name: 安装 Hexo 及 压缩插件
       run: |
         npm install hexo-cli --global
 
     - name: 安装依赖
-      if: steps.cache-node-modules.outputs.cache-hit != 'true'
       run: |
         npm install --save
 
