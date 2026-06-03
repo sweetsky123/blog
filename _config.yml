@@ -1,0 +1,103 @@
+# Hexo 配置
+## 文档：https://hexo.io/zh-cn/docs/configuration
+## 源码：https://github.com/hexojs/hexo
+
+# 站点信息
+title: Hexo
+subtitle: ''
+description: ''
+keywords:
+author: John Doe
+language: en
+timezone: ''
+
+# URL 设置
+## 在此处设置站点 URL。例如，若使用 GitHub Page，请将 url 设置为 'https://username.github.io/project'
+url: http://example.com
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+pretty_urls:
+  trailing_index: true # 设为 false 将从永久链接中移除尾部的 'index.html'
+  trailing_html: true # 设为 false 将从永久链接中移除尾部的 '.html'
+
+# 目录设置
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# 文章设置
+new_post_name: :title.md # 新文章的默认文件名
+default_layout: post
+titlecase: false # 是否将标题转换为首字母大写格式
+external_link:
+  enable: true # 是否在新标签页中打开外部链接
+  field: site # 适用范围：site（全站）或 post（仅文章）
+  exclude: ''
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+syntax_highlighter: highlight.js
+highlight:
+  line_number: true
+  auto_detect: false
+  tab_replace: ''
+  wrap: true
+  hljs: false
+prismjs:
+  preprocess: true
+  line_number: true
+  tab_replace: ''
+
+# 首页设置
+# path: 博客首页的根路径（默认为 ''）
+# per_page: 每页显示的文章数量（设为 0 将关闭分页功能）
+# order_by: 文章的排序方式（默认按日期降序排列）
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# 分类与标签设置
+default_category: uncategorized
+category_map:
+tag_map:
+
+# 元数据元素
+## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
+meta_generator: true
+
+# 日期与时间格式
+## Hexo 使用 Moment.js 来解析和显示日期
+## 你可以按照 http://momentjs.com/docs/#/displaying/format/ 的说明自定义日期格式
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+## updated_option 支持的值：'mtime'、'date'、'empty'
+updated_option: 'mtime'
+
+# 分页设置
+## 将 per_page 设为 0 可关闭分页功能
+per_page: 10
+pagination_dir: page
+
+# 文件包含与排除规则
+## include 和 exclude 选项仅作用于 'source/' 文件夹
+include:
+exclude:
+ignore:
+
+# 扩展
+## 插件列表：https://hexo.io/plugins/
+## 主题列表：https://hexo.io/themes/
+theme: landscape
+
+# 部署设置
+## 文档：https://hexo.io/zh-cn/docs/one-command-deployment
+deploy:
+  type: ''
