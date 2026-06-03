@@ -1232,14 +1232,71 @@ CDN:
   # 两者的选项：local/jsdelivr/unpkg/cdnjs/custom
   # 注意： Dev 版本只能使用 'local' 作为内部脚本
   # 注意：将第三方脚本设置为 'local' 时，需要安装 hexo-butterfly-extjs
-  internal_provider: local
-  third_party_provider: jsdelivr
+  internal_provider: custom
+  third_party_provider: custom # 这个只要你没魔改，改主题JS和CSS源码，就不用担心，直接换掉就行，改Pug不影响
 
   # 是否在 URL 中添加版本号，true 或 false
-  version: false
+  version: true # 加版本号更准确，要不然更新后可能js不起作用了
 
   # 自定义格式
   # 例如：https://cdn.staticfile.org/${cdnjs_name}/${version}/${min_cdnjs_file}
-  custom_format:
+  # custom_format: https://cdn.jsdmirror.com/npm/${name}@${version}/${min_file} # 其他的jsd链接都会给你换成这个的，刚才那个好像有些资源不起作用，所以换成了这个，速度很快
+  custom_format: https://cdn.hslzz.cn/npm/${name}@${version}/${min_file}
+
 
   option:
+    # abcjs_basic_js:
+    # activate_power_mode:
+    # algolia_js:
+    # algolia_search:
+    # aplayer_css:
+    # aplayer_js:
+    # artalk_css:
+    # artalk_js:
+    # blueimp_md5:
+    # busuanzi: # 我感觉唯一需要修改的就是这个，官方的busuanzi很慢，可以尝试其他的
+    # canvas_fluttering_ribbon:
+    # canvas_nest:
+    # canvas_ribbon:
+    # click_heart:
+    # clickShowText:
+    # disqusjs:
+    # disqusjs_css:
+    # docsearch_css:
+    # docsearch_js:
+    # egjs_infinitegrid:
+    # fancybox:
+    # fancybox_css:
+    # fireworks:
+    # fontawesome:
+    # gitalk:
+    # gitalk_css:
+    # giscus:
+    # instantpage:
+    # instantsearch:
+    # katex:
+    # katex_copytex:
+    # lazyload:
+    # local_search:
+    # main:
+    # main_css:
+    # mathjax:
+    # medium_zoom:
+    # mermaid:
+    # meting_js:
+    # pangu:
+    # prismjs_autoloader:
+    # prismjs_js:
+    # prismjs_lineNumber_js:
+    # pjax:
+    # sharejs:
+    # sharejs_css:
+    # snackbar:
+    # snackbar_css:
+    # translate:
+    # twikoo:
+    # typed:
+    # utils:
+    # valine:
+    # waline_css:
+    # waline_js:
