@@ -52,7 +52,8 @@ code_blocks:
 # 格式:
 #   icon: 链接 || 描述 || 颜色
 social:
-
+  fab fa-github: https://github.com/sweetsky123 || Github || "#hdhfbb"
+  fas fa-envelope: mailto:sweetsky2233@foxmail.com || Email || "#000000"
 # --------------------------------------
 # 图片设置
 # --------------------------------------
