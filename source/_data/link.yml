@@ -1,0 +1,133 @@
+- class_name: 开发基础
+  class_desc: 各位奠基的框架们
+  link_list:
+    - name: Hexo
+      link: https://hexo.io/zh-cn/
+      avatar: https://d33wubrfki0l68.cloudfront.net/6657ba50e702d84afb32fe846bed54fba1a77add/827ae/logo.svg
+      descr: 快速、简洁且高效的博客框架
+    - name: Node.js
+      link: https://nodejs.org/
+      avatar: https://tse4-mm.cn.bing.net/th/id/OIP-C.5gf2JQQmWla-GU-WXTrGcgHaE8?w=3000&h=2000&rs=1&pid=ImgDetMain
+      descr: 在任何地方运行 JavaScript
+    - name: Butterfly
+      link: https://butterfly.js.org/
+      avatar: https://butterfly.js.org/img/butterfly-icon.png
+      descr: 基于hexo-theme-melody的基础上进行开发的主题
+    - name: Let's Encrypt
+      link: https://letsencrypt.org/blog/
+      avatar: https://letsencrypt.org/images/le-logo-lockonly.svg
+      descr: 免费、开放、自动化的证书颁发机构
+
+
+- class_name: 推荐友链
+  class_desc: 相谈甚多的朋友们
+  link_list:
+    - name: 渝心里の个人博客
+      link: https://blog.shinyli.cn/
+      avatar: https://free.picui.cn/free/2026/06/03/6a2036493a079.jpg
+      descr: 勇敢一点，风华正茂当然要落落大方
+    - name: 桉南的小窝
+      link: https://blog.yll14.cn/
+      avatar: https://free.picui.cn/free/2025/11/16/6919dac02d58d.jpg
+      descr: 如果我真的存在，也是因为你需要我
+    - name: 清羽飞扬
+      link: https://blog.liushen.fun/
+      avatar: https://blog.liushen.fun/info/avatar.ico
+      descr: 柳影曳曳，清酒孤灯，扬笔撒墨，心境如霜
+    - name: Ariasakaの小窝
+      link: https://blog.yaria.top/
+      avatar: https://img.0v0.my/2024/12/05/67517bcf104da.png
+      descr: 人有悲欢离合 月有阴晴圆缺
+    - name: Redish101
+      link: https://blog.redish101.top
+      avatar: https://blog.redish101.top/favicon.ico
+      descr: 人文 科技 白日梦.
+    - name: 微霞
+      link: https://yuuu.org
+      avatar: https://cdn.yuuu.org/img/avatar.webp
+      descr: 水风清，晚霞明
+    - name: 哈基米的个人站
+      link: https://lilyxuan.online/
+      avatar: https://avatars.githubusercontent.com/u/119688450?s=400&u=e39baacf67caa1806c65aab8f29c97d588059d44&v=4
+      descr: 哈基米的独立开发记录
+- class_name: 好朋友们
+  class_desc: 善良可爱的朋友们
+  link_list:
+    - name: 纸鹿摸鱼处
+      link: https://blog.zhilu.cyou/
+      avatar: https://www.zhilu.cyou/api/avatar.png
+      descr: 纸鹿至麓不知路，支炉制露不止漉
+    - name: 葱苓sama
+      link: https://blog.ciraos.top/
+      avatar: https://files.seeusercontent.com/2026/02/28/Vxb1/avatar2.avif
+      descr: 风带来了故事的种子，时间使其发芽。
+    - name: 陌颜Hao
+      link: https://blog.imoyan.top/
+      avatar: https://bu.dusays.com/2024/10/12/6709ddf3513c5.jpg
+      descr: 愿永不忘初心！
+    - name: 煮雪话河山
+      link: https://blog.cent1pedee.top/
+      avatar: https://img.cent1pedee.top/img/wechat.jpg
+      descr: 如月之恒，如日之升。
+    - name: Fgaoxing
+      link: https://www.yt-blog.top/
+      avatar: https://img.yt-blog.top/webp/logo.webp
+      descr: 一个少年的博客
+    - name: 无限进步
+      link: https://wgming.cn/
+      avatar: https://q2.qlogo.cn/g?b=qq&nk=3489996586&s=100
+      descr: 不用急着赶路，去感受路
+    - name: 汐娜物语
+      link: https://blog.storia.ren/
+      avatar: https://blog.storia.ren/images/icon.png
+      descr: 一起来绘制属于自己的星星！
+    - name: Android
+      link: https://android99.com
+      avatar: https://android99.com/img/avatar.png
+      descr: 边缘矩阵
+    - name: 梦溯·镜影
+      link: https://yumetsuki.moe/
+      avatar: https://img.r2.yumetsuki.moe/avatar.webp
+      descr: sleeeeep
+- class_name: 小伙伴们
+  class_desc: 我们在一起，共同进步
+  link_list:
+    - name: 文彦
+      link: https://kningyuan.top
+      avatar: https://kningyuan.top/img/avatar.jpg
+      descr: 不积跬步，无以至千里
+    - name: 栖童の小站
+      link: https://blog.linux-qitong.top
+      avatar: https://blog.linux-qitong.top/img/avatar.webp
+      descr: 越努力，越幸运.
+    - name: Mayx的博客
+      link: https://mabbs.github.io
+      avatar: https://avatars0.githubusercontent.com/u/17966333
+      descr: Mayx’s Home Page
+    - name: 幻想の日常
+      link: https://blog.someo.top
+      avatar: https://blog.someo.top/data/img/tx.jpeg
+      descr: 心随幻想，梦行无疆
+    - name: 笔搁纸鸯
+      link: https://b.wihi.top
+      avatar: https://b.wihi.top/favicon.svg
+      descr: 记我所想，记录生活，随心而为，仅此而已
+    - name: 弹霄博科
+      link: https://www.txisfine.cn/
+      avatar: https://static.txisfine.cn/images/favicon.png/pk_img
+      descr: 小谈谈的一亩三分地
+    - name: AirTouchの小站
+      link: https://www.xsl.im/
+      avatar: https://www.xsl.im/avatar.webp
+      descr: 岩间琉璃云间月
+#     - name: ZERO开发
+#       link: https://www.zerofc.cn/
+#       avatar: https://pica.zhimg.com/80/v2-a67e0f93ae57170e033e56834c841c43_720w.png
+#       descr: 一个持续探索副业的独立开发者博客
+# - class_name: 失联友链
+#   class_desc: 愿君早归
+#   link_list:
+#     - name: 拂晓不辍
+#       link: https://aowu.dog
+#       avatar: https://aowu.dog/touxiang.png
+#       descr: 老是在幻想自己是主角
