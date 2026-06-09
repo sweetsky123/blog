@@ -1,0 +1,39 @@
+/* 首页字体 */
+@font-face {
+    font-family: hytmr55w;
+    font-display: swap;
+    src: url(https://npm.elemecdn.com/fontcdn-ariasaka@1.0.0/HYTangMeiRen55W.woff2) format("woff2")
+}
+
+h1#site-title {
+    font-family:hytmr55w!important
+}
+span#subtitle {
+    font-family:hytmr55w!important
+}
+a#site-name {
+    font-family:hytmr55w!important
+}
+
+/* 页脚透明渐变 */
+/*
+#footer {
+    background: rgba(255,255,255,.15);
+    color: #000;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    backdrop-filter: saturate(100%) blur(5px)
+}
+
+#footer::before {
+    background: rgba(255,255,255,.15)
+}
+
+#footer #footer-wrap {
+    color: var(--font-color)
+}
+
+#footer #footer-wrap a {
+    color: var(--font-color)
+}
+*/
