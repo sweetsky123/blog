@@ -24,7 +24,8 @@
   link_list:
     - name: 渝心里の个人博客
       link: https://blog.shinyli.cn/
-      avatar: https://free.picui.cn/free/2026/06/03/6a2036493a079.jpg
+      #avatar: https://free.picui.cn/free/2026/06/03/6a2036493a079.jpg
+      avatar: /img/link/shinyli.jpg
       descr: 勇敢一点，风华正茂当然要落落大方
     - name: 桉南的小窝
       link: https://blog.yll14.cn/
@@ -87,7 +88,7 @@
       descr: 边缘矩阵
     - name: 梦溯·镜影
       link: https://yumetsuki.moe/
-      avatar: https://img.r2.yumetsuki.moe/avatar.webp
+      avatar: https://img-r2.yumetsuki.moe/avatar.webp
       descr: sleeeeep
 - class_name: 小伙伴们
   class_desc: 我们在一起，共同进步
