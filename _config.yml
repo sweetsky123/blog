@@ -14,7 +14,8 @@ timezone: 'Asia/Shanghai'
 # URL 设置
 ## 在此处设置站点 URL。例如，若使用 GitHub Page，请将 url 设置为 'https://username.github.io/project'
 url: https://blog.hslzz.cn
-permalink: :year/:month/:day/:title/
+#permalink: :year/:month/:day/:title/
+permalink: posts/:series.html
 permalink_defaults:
 pretty_urls:
   trailing_index: true # 设为 false 将从永久链接中移除尾部的 'index.html'
@@ -54,19 +55,24 @@ external_link:
 # 新建文章时，对文件名的大小写转换规则。0：不转换；1：转换为小写；2：转换为大写。
 filename_case: 0
 
-# 是否在生成站点时渲染草稿（draft）文章。设为 true 会同时渲染草稿，但生产环境中建议保持 false。预览草稿也可通过 --draft 参数实现。
+# 是否在生成站点时渲染草稿（draft）文章。
+# 设为 true 会同时渲染草稿，但生产环境中建议保持 false。预览草稿也可通过 --draft 参数实现。
 render_drafts: false
 
-# 是否启用文章资源文件夹。设为 true 后，每次使用 hexo new 创建文章时，会自动生成一个与文章同名的文件夹，用于存放该文章的图片等资源。
+# 是否启用文章资源文件夹。
+# 设为 true 后，每次使用 hexo new 创建文章时，会自动生成一个与文章同名的文件夹，用于存放该文章的图片等资源。
 post_asset_folder: false
 
-# 生成的链接是否使用相对路径。设为 true 时，链接会根据当前页面位置生成为相对路径（如 ../../css/style.css）。
+# 生成的链接是否使用相对路径。
+# 设为 true 时，链接会根据当前页面位置生成为相对路径（如 ../../css/style.css）。
 relative_link: false
 
-# 是否显示发布日期为未来时间的文章。设为 false 后，未到达发布日期的文章不会显示，可用于定时发布功能。
+# 是否显示发布日期为未来时间的文章。
+# 设为 false 后，未到达发布日期的文章不会显示，可用于定时发布功能。
 future: true
 
-# 指定代码语法高亮库。Hexo v7.0.0 及以上版本支持 highlight.js 或 prismjs。设为空则禁用内建高亮。
+# 指定代码语法高亮库。
+# Hexo v7.0.0 及以上版本支持 highlight.js 或 prismjs。设为空则禁用内建高亮。
 syntax_highlighter: highlight.js
 
 
@@ -131,7 +137,10 @@ include:
 exclude:
 ignore:
 
-# 扩展
+# --------------------------------------
+# 扩展设置
+# --------------------------------------
+
 ## 插件列表：https://hexo.io/plugins/
 ## 主题列表：https://hexo.io/themes/
 theme: butterfly
@@ -140,3 +149,13 @@ theme: butterfly
 ## 文档：https://hexo.io/zh-cn/docs/one-command-deployment
 deploy:
   type: ''
+
+# Sitemap 站点地图设置
+# 插件：hexo-generator-sitemap
+sitemap:
+  path: sitemap.xml
+
+# --------------------------------------
+# 其他设置
+# --------------------------------------
+
