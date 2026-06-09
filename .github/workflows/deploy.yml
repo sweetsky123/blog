@@ -51,10 +51,16 @@ jobs:
     - name: 清理文件树
       run: |
         npm run clean
+        hexo cl
 
-    - name: 生成静态文件并压缩
+    - name: 生成静态文件
       run: |
-        npm run build
+        hexo g 
+
+    - name: 压缩文件
+      run: |
+        npm install terser html-minifier-terser postcss cssnano sharp svgo glob fast-glob
+        node min.js public
 
     - name: 部署
       run: |
