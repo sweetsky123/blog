@@ -1231,6 +1231,7 @@ inject:
   head:
     # - <link rel="stylesheet" href="/xxx.css">
     - <link rel="stylesheet" href="/css/title_font.css">
+    - <link rel="shortcut icon" href="/favicon.ico" />
   bottom:
     # - <script src="xxxx"></script>
 
