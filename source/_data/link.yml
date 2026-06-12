@@ -13,10 +13,6 @@
       link: https://butterfly.js.org/
       avatar: https://butterfly.js.org/img/butterfly-icon.png
       descr: 基于hexo-theme-melody的基础上进行开发的主题
-    - name: Let's Encrypt
-      link: https://letsencrypt.org/blog/
-      avatar: https://letsencrypt.org/images/le-logo-lockonly.svg
-      descr: 免费、开放、自动化的证书颁发机构
 
 
 - class_name: 推荐友链
