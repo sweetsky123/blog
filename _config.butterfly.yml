@@ -76,7 +76,7 @@ disable_top_img: false
 default_top_img: /img/default.jpg
 
 # 主页的横幅图片
-index_img: /img/index.png
+index_img:
 
 # 归档页的横幅图片
 archive_img:
