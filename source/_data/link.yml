@@ -20,12 +20,12 @@
   link_list:
     - name: 渝心里の个人博客
       link: https://blog.shinyli.cn/
-      #avatar: https://free.picui.cn/free/2026/06/03/6a2036493a079.jpg
-      avatar: /img/link/shinyli.jpg
+      avatar: https://free.picui.cn/free/20260613/afb4c65290f3da1e414d3671034bc1aa.jpg
+      #avatar: /img/link/shinyli.jpg
       descr: 勇敢一点，风华正茂当然要落落大方
     - name: 桉南的小窝
       link: https://blog.yll14.cn/
-      avatar: https://free.picui.cn/free/2025/11/16/6919dac02d58d.jpg
+      avatar: https://free.picui.cn/free/20260613/acd54e01b359a0f522a75af6478ebc08.jpg
       descr: 如果我真的存在，也是因为你需要我
     - name: 清羽飞扬
       link: https://blog.liushen.fun/
