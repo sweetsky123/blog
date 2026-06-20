@@ -87,6 +87,8 @@ highlight:
   wrap: true
   # 是否将 highlight.js 的 CSS 类名（如 'hljs'）添加到代码块的 <code> 标签上。用于兼容 highlight.js 的主题样式。
   hljs: false
+  # Mermaid 图表
+  exclude_languages: ['mermaid']
 
 prismjs:
   # 是否在服务端进行预渲染（预处理）。true 表示在服务端完成高亮，false 表示在浏览器端进行高亮。
@@ -95,7 +97,8 @@ prismjs:
   line_number: true
   # 将代码块中的制表符（tab）替换为指定数量的空格。留空表示不做替换。
   tab_replace: ''
-
+  # Mermaid 图表
+  exclude_languages: ['mermaid']
 
 # --------------------------------------
 # 首页设置

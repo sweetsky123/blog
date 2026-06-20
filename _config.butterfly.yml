@@ -959,10 +959,10 @@ beautify:
 # 全局字体设置
 # 除非您知道它们的工作原理，否则不要修改以下设置
 font:
-  global-font-size:
-  code-font-size:
-  font-family:
-  code-font-family:
+  global_font_size: 16px
+  code_font_size:
+  font_family: HYTMR
+  code_font_family: Cascadia Code
 
 # 网站标题和副标题的字体设置
 blog_title_font:
@@ -1096,9 +1096,9 @@ abcjs:
 # https://github.com/mermaid-js/mermaid
 mermaid:
   # 是否启用 Mermaid
-  enable: false
+  enable: true
   # 使用代码块编写 Mermaid 图表
-  code_write: false
+  code_write: true
   # 内置主题: default / forest / dark / neutral
   theme:
     light: default
@@ -1163,9 +1163,9 @@ aplayerInject:
 # 位置: top-left / top-center / top-right / bottom-left / bottom-center / bottom-right
 snackbar:
   # 是否启用 Snackbar
-  enable: false
+  enable: true
   # 通知位置
-  position: bottom-left
+  position: top-center
   # 浅色模式和深色模式下的通知背景颜色
   bg_light: '#49b1f5'
   bg_dark: '#1f1f1f'
@@ -1232,6 +1232,7 @@ inject:
     # - <link rel="stylesheet" href="/xxx.css">
     - <link rel="stylesheet" href="/css/title_font.css">
     - <link rel="shortcut icon" href="/favicon.ico" />
+    - <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap">
   bottom:
     # - <script src="xxxx"></script>
 
