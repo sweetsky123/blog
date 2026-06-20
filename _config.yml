@@ -159,3 +159,7 @@ sitemap:
 # 其他设置
 # --------------------------------------
 
+# Katex
+markdown:
+  plugins:
+    - '@renbaoshuo/markdown-it-katex'
