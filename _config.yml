@@ -166,3 +166,25 @@ sitemap:
 markdown:
   plugins:
     - '@renbaoshuo/markdown-it-katex'
+
+# RSS订阅插件设置
+# RSS Feed
+# RSS订阅：https://github.com/hexojs/hexo-generator-feed
+feed:
+  enable: true  # 启用或禁用Feed插件，true为启用，false为禁用
+  type: # 设置Feed的类型，可以是atom或rss2，或者两者都输出
+    - atom
+    - rss2
+  path: # 设置Feed文件的路径，当输出两种类型时，需要按照类型顺序设置路径
+    - atom.xml
+    #- rss.xml
+    - rss2.xml
+  limit: false  # 设置Feed中显示的文章数量上限，0或false表示显示所有文章
+  hub:  # PubSubHubbub中心URL，如果不使用可以留空
+  content: false # 是否在Feed中包含文章全文内容，true为包含，false为不包含
+  content_limit:  # 设置Feed中文章内容的长度限制，仅当content为true时有效
+  content_limit_delim: ' '  # 设置内容长度限制的分割符，默认为空格
+  order_by: -date  # 设置Feed中文章的排序方式，默认按日期倒序
+  icon: favicon.ico  # 设置Feed的图标，默认使用_config.yml中指定的电子邮件的gravatar
+  autodiscovery: true  # 是否启用Feed的自动发现功能，true为启用，false为禁用
+  template:  # 设置自定义Feed模板的路径，可以指定一个或多个模板
