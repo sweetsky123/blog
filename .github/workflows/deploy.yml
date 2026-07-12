@@ -23,6 +23,11 @@ jobs:
       with:
         ref: main
     
+    - name: 安装最新版 Golang
+      uses: actions/setup-go@v5
+      with:
+        go-version: 'stable
+
     - name: 检测Golang环境版本
       run: |
         go version
