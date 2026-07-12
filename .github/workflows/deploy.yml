@@ -22,7 +22,11 @@ jobs:
       uses: actions/checkout@main
       with:
         ref: main
-        
+    
+    - name: 检测Golang环境版本
+      run: |
+        go version
+
     - name: 安装 Node
       uses: actions/setup-node@main
       with:
