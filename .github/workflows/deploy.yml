@@ -24,7 +24,7 @@ jobs:
         ref: main
     
     - name: 安装最新版 Golang
-      uses: actions/setup-go@v5
+      uses: actions/setup-go@v7
       with:
         go-version: 'stable'
 
@@ -33,7 +33,7 @@ jobs:
         go version
 
     - name: 安装 Node
-      uses: actions/setup-node@main
+      uses: actions/setup-node@v7
       with:
         node-version: 'lts/*'
 
