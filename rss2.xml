@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>花生莲子粥の小窝</title>
+    <link>https://blog.hslzz.cn/</link>
+    <description>与世无争，不染于泥</description>
+    <language>zh-CN</language>
+    <copyright>All rights reserved 2026, 花生莲子粥</copyright>
+    <lastBuildDate>Sat, 20 Jun 2026 07:30:00 GMT</lastBuildDate>
+    <generator>Hexo</generator>
+    <image>
+      <url>https://blog.hslzz.cn/favicon.ico</url>
+      <title>花生莲子粥の小窝</title>
+      <link>https://blog.hslzz.cn/</link>
+    </image>
+    <atom:link href="https://blog.hslzz.cn/rss2.xml" rel="self" type="application/rss+xml"/>
+    <item>
+      <title>蜂考《数据结构》笔记</title>
+      <link>https://blog.hslzz.cn/posts/15.html</link>
+      <description>
+        <![CDATA[<h2 id="P1-数据结构与算法">P1 数据结构与算法</h2>
+<h3 id="1-数据结构基础概念">1. 数据结构基础概念</h3>
+<h4 id="1-1-基本术语定义">1.1]]>
+      </description>
+      <author>花生莲子粥</author>
+      <category domain="https://blog.hslzz.cn/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/">学习笔记</category>
+      <category domain="https://blog.hslzz.cn/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/">数据结构</category>
+      <pubDate>Sat, 20 Jun 2026 07:30:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>使用Diskpart为你的U盘添加只读保护</title>
+      <link>https://blog.hslzz.cn/posts/14.html</link>
+      <description>Diskpart是一个强大的命令行磁盘管理工具，添加只读后非常适合在别人的电脑上传文件，而不用担心u盘里面的文件被木马病毒投毒</description>
+      <author>花生莲子粥</author>
+      <category domain="https://blog.hslzz.cn/categories/Windows/">Windows</category>
+      <category domain="https://blog.hslzz.cn/tags/%E6%95%99%E7%A8%8B/">教程</category>
+      <category domain="https://blog.hslzz.cn/tags/Windows/">Windows</category>
+      <pubDate>Fri, 21 Nov 2025 12:20:10 GMT</pubDate>
+    </item>
+    <item>
+      <title>在不同版本的Linux中安装信任根证书CA</title>
+      <link>https://blog.hslzz.cn/posts/13.html</link>
+      <description>本文将指导您如何在不同版本的Linux系统中安装信任根证书CA</description>
+      <author>花生莲子粥</author>
+      <category domain="https://blog.hslzz.cn/categories/Linux/">Linux</category>
+      <category domain="https://blog.hslzz.cn/tags/%E6%95%99%E7%A8%8B/">教程</category>
+      <category domain="https://blog.hslzz.cn/tags/Linux/">Linux</category>
+      <pubDate>Sun, 02 Nov 2025 05:45:35 GMT</pubDate>
+    </item>
+    <item>
+      <title>彻底解决Ubuntu的经典DNS之127.0.0.53问题，让你的服务永不停机！</title>
+      <link>https://blog.hslzz.cn/posts/12.html</link>
+      <description>Ubuntu 在默认配置下总是将 DNS 设置为127.0.0.53导致服务器无法上网，为了保证服务的稳定性，解决这个问题应该是必要的。本文将对该问题进行研究并提出一个彻底解决 DNS 变为127.0.0.53的问题的办法，让你的服务稳定运行！</description>
+      <author>花生莲子粥</author>
+      <category domain="https://blog.hslzz.cn/categories/Linux/">Linux</category>
+      <category domain="https://blog.hslzz.cn/tags/%E6%95%99%E7%A8%8B/">教程</category>
+      <category domain="https://blog.hslzz.cn/tags/Linux/">Linux</category>
+      <category domain="https://blog.hslzz.cn/tags/Ubuntu/">Ubuntu</category>
+      <pubDate>Fri, 12 Sep 2025 10:30:50 GMT</pubDate>
+    </item>
+    <item>
+      <title>保姆级Matrix+Synapse部署教程，支持端到端加密，部署一个独属于自己的去中心化在线加密匿名聊天室！</title>
+      <link>https://blog.hslzz.cn/posts/11.html</link>
+      <description>本文没有废话，全是干货，保姆式讲解了如何在Linux系统上通过Docker部署Matrix+Synapse服务端，实现去中心化端到端加密聊天。）、通过Docker Compose安装配置Postgres数据库、生成服务端配置文件、修改数据库连接及开放注册设置，并提供客户端Element APK反编译修改连接域名的方法，最终实现独立部署的加密匿名聊天室。</description>
+      <author>花生莲子粥</author>
+      <category domain="https://blog.hslzz.cn/categories/Linux/">Linux</category>
+      <category domain="https://blog.hslzz.cn/tags/Linux/">Linux</category>
+      <category domain="https://blog.hslzz.cn/tags/%E7%BB%8F%E9%AA%8C/">经验</category>
+      <category domain="https://blog.hslzz.cn/tags/Matrix/">Matrix</category>
+      <pubDate>Mon, 28 Jul 2025 15:30:50 GMT</pubDate>
+    </item>
+    <item>
+      <title>使用AllinSSL实现自动续签雷池WAF的SSL证书</title>
+      <link>https://blog.hslzz.cn/posts/10.html</link>
+      <description>使用AllinSSL实现自动续签雷池WAF的SSL证书的最佳实践</description>
+      <author>花生莲子粥</author>
+      <category domain="https://blog.hslzz.cn/categories/Linux/">Linux</category>
+      <category domain="https://blog.hslzz.cn/tags/Linux/">Linux</category>
+      <category domain="https://blog.hslzz.cn/tags/%E7%BB%8F%E9%AA%8C/">经验</category>
+      <category domain="https://blog.hslzz.cn/tags/%E9%9B%B7%E6%B1%A0WAF/">雷池WAF</category>
+      <category domain="https://blog.hslzz.cn/tags/%E5%BB%BA%E7%AB%99/">建站</category>
+      <pubDate>Fri, 18 Jul 2025 10:25:20 GMT</pubDate>
+    </item>
+    <item>
+      <title>雷池WAF-LTS版本安装教程</title>
+      <link>https://blog.hslzz.cn/posts/8.html</link>
+      <description>雷池是一款简单好用, 效果突出的 Web 应用防火墙(WAF)，可以保护 Web 服务不受黑客攻击。本文旨在教学雷池LTS版本的安装过程</description>
+      <author>花生莲子粥</author>
+      <category domain="https://blog.hslzz.cn/categories/Linux/">Linux</category>
+      <category domain="https://blog.hslzz.cn/tags/Linux/">Linux</category>
+      <category domain="https://blog.hslzz.cn/tags/%E7%BB%8F%E9%AA%8C/">经验</category>
+      <category domain="https://blog.hslzz.cn/tags/%E9%9B%B7%E6%B1%A0WAF/">雷池WAF</category>
+      <category domain="https://blog.hslzz.cn/tags/Ubuntu/">Ubuntu</category>
+      <pubDate>Wed, 16 Jul 2025 21:55:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>给自己的服务器自签SSL/TLS证书用于内网通信</title>
+      <link>https://blog.hslzz.cn/posts/9.html</link>
+      <description>使用EC384-SHA384算法为内网服务器自签SSL/TLS证书。包含创建CA、服务器密钥和证书的完整步骤，支持多域名/IP配置。</description>
+      <author>花生莲子粥</author>
+      <category domain="https://blog.hslzz.cn/categories/Linux/">Linux</category>
+      <category domain="https://blog.hslzz.cn/tags/Linux/">Linux</category>
+      <category domain="https://blog.hslzz.cn/tags/%E7%BB%8F%E9%AA%8C/">经验</category>
+      <pubDate>Wed, 16 Jul 2025 02:35:20 GMT</pubDate>
+    </item>
+    <item>
+      <title>利用CDN自定义请求报头功能实现源站精确获得访客ip</title>
+      <link>https://blog.hslzz.cn/posts/7.html</link>
+      <description>按照本文教程配置成功后可以实现”一头走天下“：只要代理链路不对自定义头修改，任何代理链路和源站都可以直接读取这个头获得访客ip，而不需要繁琐的配置XFF</description>
+      <author>花生莲子粥</author>
+      <category domain="https://blog.hslzz.cn/categories/Linux/">Linux</category>
+      <category domain="https://blog.hslzz.cn/tags/Linux/">Linux</category>
+      <category domain="https://blog.hslzz.cn/tags/%E7%BB%8F%E9%AA%8C/">经验</category>
+      <category domain="https://blog.hslzz.cn/tags/%E9%9B%B7%E6%B1%A0WAF/">雷池WAF</category>
+      <category domain="https://blog.hslzz.cn/tags/Ubuntu/">Ubuntu</category>
+      <pubDate>Sun, 08 Jun 2025 14:45:20 GMT</pubDate>
+    </item>
+    <item>
+      <title>Ubuntu一步到位改语言、时区、更新源、DNS</title>
+      <link>https://blog.hslzz.cn/posts/6.html</link>
+      <description>本文写了Ubuntu系统一键配置指南，包括中文语言设置、时区调整、换更新源、改DNS，附带了详细命令和操作步骤，帮助快速完成系统基础优化工作。</description>
+      <author>花生莲子粥</author>
+      <category domain="https://blog.hslzz.cn/categories/Linux/">Linux</category>
+      <category domain="https://blog.hslzz.cn/tags/Linux/">Linux</category>
+      <category domain="https://blog.hslzz.cn/tags/%E7%BB%8F%E9%AA%8C/">经验</category>
+      <category domain="https://blog.hslzz.cn/tags/Ubuntu/">Ubuntu</category>
+      <pubDate>Mon, 02 Jun 2025 01:25:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>优化Hexo博客文章永久链接的几种方法</title>
+      <link>https://blog.hslzz.cn/posts/5.html</link>
+      <description>本文介绍三种优化 Hexo 博客永久链接的方法，解决默认链接过长、不稳定的问题，提升 SEO 和用户体验。通过时间戳、哈希生成等方法，轻松实现简洁、稳定的永久链接格式。</description>
+      <author>花生莲子粥</author>
+      <category domain="https://blog.hslzz.cn/categories/Hexo/">Hexo</category>
+      <category domain="https://blog.hslzz.cn/tags/Hexo/">Hexo</category>
+      <category domain="https://blog.hslzz.cn/tags/%E6%95%99%E7%A8%8B/">教程</category>
+      <pubDate>Sat, 12 Apr 2025 02:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>智能的给Hexo全站外链加上rel标签，解决seo权重外流问题</title>
+      <link>https://blog.hslzz.cn/posts/4.html</link>
+      <description>为Hexo博客全站外链添加rel标签，解决 SEO 权重外流问题，提升博客优化效果。</description>
+      <author>花生莲子粥</author>
+      <category domain="https://blog.hslzz.cn/categories/Hexo/">Hexo</category>
+      <category domain="https://blog.hslzz.cn/tags/Hexo/">Hexo</category>
+      <category domain="https://blog.hslzz.cn/tags/Butterfly/">Butterfly</category>
+      <category domain="https://blog.hslzz.cn/tags/%E6%95%99%E7%A8%8B/">教程</category>
+      <pubDate>Wed, 05 Mar 2025 11:15:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>（整活）用29行C++代码写一个Deepseek</title>
+      <link>https://blog.hslzz.cn/posts/3.html</link>
+      <description>这篇文章纯属整整活儿</description>
+      <author>花生莲子粥</author>
+      <category domain="https://blog.hslzz.cn/categories/%E6%95%B4%E6%B4%BB/">整活</category>
+      <category domain="https://blog.hslzz.cn/tags/%E6%95%B4%E6%B4%BB/">整活</category>
+      <pubDate>Mon, 17 Feb 2025 05:50:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>在Kali2024.4安装QQ Linux版</title>
+      <link>https://blog.hslzz.cn/posts/2.html</link>
+      <description>阅读这篇完整指南，了解如何在Kali系统上用deb安装QQ的方法。</description>
+      <author>花生莲子粥</author>
+      <category domain="https://blog.hslzz.cn/categories/Linux/">Linux</category>
+      <category domain="https://blog.hslzz.cn/tags/%E7%BB%8F%E9%AA%8C/">经验</category>
+      <category domain="https://blog.hslzz.cn/tags/Kali/">Kali</category>
+      <pubDate>Mon, 27 Jan 2025 07:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Hexo + Butterfly博客安装教程</title>
+      <link>https://blog.hslzz.cn/posts/1.html</link>
+      <description>阅读这篇完整指南，了解安装Hexo+Butterfly博客的方法。手把手教你从零开始搭建个人博客。零基础也能轻松上手！</description>
+      <author>花生莲子粥</author>
+      <category domain="https://blog.hslzz.cn/categories/Hexo/">Hexo</category>
+      <category domain="https://blog.hslzz.cn/tags/Hexo/">Hexo</category>
+      <category domain="https://blog.hslzz.cn/tags/Butterfly/">Butterfly</category>
+      <category domain="https://blog.hslzz.cn/tags/%E6%95%99%E7%A8%8B/">教程</category>
+      <pubDate>Fri, 06 Dec 2024 03:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>
