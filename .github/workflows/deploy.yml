@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 检查分支
-      uses: actions/checkout@main
+      uses: actions/checkout@v7
       with:
         ref: main
     
