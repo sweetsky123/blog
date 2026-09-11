@@ -112,12 +112,12 @@ katex:
   name: katex
   file: dist/katex.min.css
   other_name: KaTeX
-  version: 0.16.28
+  version: 0.18.7
 katex_copytex:
   name: katex
   file: dist/contrib/copy-tex.min.js
   other_name: KaTeX
-  version: 0.16.28
+  version: 0.18.7
 lazyload:
   name: vanilla-lazyload
   file: dist/lazyload.iife.min.js
