@@ -1,0 +1,97 @@
+name: 检测主题依赖更新
+
+on:
+  schedule:
+    - cron: "0 3 * * *" # 每天 UTC 3:00（北京时间 11:00）
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: plugins-update
+
+env:
+  TZ: Asia/Shanghai
+
+jobs:
+  update-plugins:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 检出 main 分支
+        uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - name: 安装 Node
+        uses: actions/setup-node@v7
+        with:
+          node-version: 'lts/*'
+
+      - name: 检测可更新的依赖
+        id: check
+        run: |
+          node .github/scripts/plugins-update.js check > outdated.json
+          echo "count=$(jq length outdated.json)" >> "$GITHUB_OUTPUT"
+          {
+            echo 'json<<EOF'
+            cat outdated.json
+            echo 'EOF'
+          } >> "$GITHUB_OUTPUT"
+
+      - name: 逐包创建更新 PR
+        if: steps.check.outputs.count != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          OUTDATED_JSON: ${{ steps.check.outputs.json }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          echo "$OUTDATED_JSON" | jq -c '.[]' | while read -r item; do
+            name=$(echo "$item" | jq -r '.name')
+            current=$(echo "$item" | jq -r '.current')
+            target=$(echo "$item" | jq -r '.latest')
+            repo=$(echo "$item" | jq -r '.repo // empty')
+            slug=$(echo "$name" | sed 's/^@//; s/[^a-zA-Z0-9._-]/-/g')
+            branch="chore/plugins-${slug}"
+
+            if git ls-remote --heads origin "refs/heads/$branch" | grep -q .; then
+              echo "分支 $branch 已存在（可能已有待合并的 PR），跳过 $name"
+              continue
+            fi
+
+            git checkout -B "$branch" origin/main
+            node .github/scripts/plugins-update.js apply "$name" "$target"
+
+            if git diff --quiet themes/butterfly/plugins.yml; then
+              echo "$name 无实际变更，跳过"
+              git checkout main
+              continue
+            fi
+
+            git add themes/butterfly/plugins.yml
+            git commit -m "chore(deps): bump ${name} from ${current} to ${target}"
+            git push origin "$branch"
+
+            body_file=$(mktemp)
+            {
+              echo "自动检测到 npm 上有新版本，且已验证新版本产物文件可通过 jsDelivr 正常访问，请审查后合并。"
+              echo ""
+              echo "- 包: [\`${name}\`](https://www.npmjs.com/package/${name})"
+              echo "- 版本: \`${current}\` → \`${target}\`"
+              echo "- 修改文件: \`themes/butterfly/plugins.yml\`（条目: $(echo "$item" | jq -r '.keys | join(", ")')）"
+              if [ -n "$repo" ]; then
+                echo "- 更新日志: https://github.com/${repo}/releases"
+              fi
+            } > "$body_file"
+
+            gh pr create \
+              --base main \
+              --head "$branch" \
+              --title "chore(deps): bump ${name} from ${current} to ${target}" \
+              --body-file "$body_file"
+
+            git checkout main
+          done
