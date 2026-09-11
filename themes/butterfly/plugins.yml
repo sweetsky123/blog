@@ -1,7 +1,7 @@
 abcjs_basic_js:
   name: abcjs
   file: dist/abcjs-basic-min.js
-  version: 6.6.0
+  version: 6.7.0
 activate_power_mode:
   name: butterfly-extsrc
   file: dist/activate-power-mode.min.js
