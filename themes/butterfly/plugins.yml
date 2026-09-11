@@ -125,7 +125,7 @@ lazyload:
 mathjax:
   name: mathjax
   file: tex-mml-chtml.js
-  version: 4.1.0
+  version: 4.1.3
 medium_zoom:
   name: medium-zoom
   file: dist/medium-zoom.min.js
