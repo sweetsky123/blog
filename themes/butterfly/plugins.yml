@@ -57,11 +57,11 @@ click_heart:
 disqusjs:
   name: disqusjs
   file: dist/browser/disqusjs.es2015.umd.min.js
-  version: 3.2.1
+  version: 3.2.2
 disqusjs_css:
   name: disqusjs
   file: dist/browser/styles/disqusjs.css
-  version: 3.2.1
+  version: 3.2.2
 docsearch_css:
   name: '@docsearch/css'
   other_name: docsearch-css
