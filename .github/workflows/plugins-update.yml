@@ -57,8 +57,8 @@ jobs:
             slug=$(echo "$name" | sed 's/^@//; s/[^a-zA-Z0-9._-]/-/g')
             branch="chore/plugins-${slug}"
 
-            if git ls-remote --heads origin "refs/heads/$branch" | grep -q .; then
-              echo "分支 $branch 已存在（可能已有待合并的 PR），跳过 $name"
+            if [ -n "$(gh pr list --head "$branch" --state open --json number -q '.[0].number')" ]; then
+              echo "$name 已有待合并的 PR，跳过"
               continue
             fi
 
