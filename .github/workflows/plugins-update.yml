@@ -73,7 +73,7 @@ jobs:
 
             git add themes/butterfly/plugins.yml
             git commit -m "chore(deps): bump ${name} from ${current} to ${target}"
-            git push origin "$branch"
+            git push --force origin "$branch"
 
             body_file=$(mktemp)
             {
