@@ -80,12 +80,12 @@ egjs_infinitegrid:
 fancybox:
   name: '@fancyapps/ui'
   file: dist/fancybox/fancybox.umd.js
-  version: 6.1.9
+  version: 6.1.15
   other_name: fancyapps-ui
 fancybox_css:
   name: '@fancyapps/ui'
   file: dist/fancybox/fancybox.css
-  version: 6.1.9
+  version: 6.1.15
   other_name: fancyapps-ui
 fireworks:
   name: butterfly-extsrc
