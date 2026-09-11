@@ -57,9 +57,25 @@ jobs:
             slug=$(echo "$name" | sed 's/^@//; s/[^a-zA-Z0-9._-]/-/g')
             branch="chore/plugins-${slug}"
 
-            if [ -n "$(gh pr list --head "$branch" --state open --json number -q '.[0].number')" ]; then
-              echo "$name 已有待合并的 PR，跳过"
-              continue
+            # 去重：已存在同 head 分支的开启状态 PR 时
+            # - 目标版本一致 -> 跳过
+            # - PR 版本已过期 -> 关闭旧 PR，重新提交新 PR
+            # - PR 版本比检测结果还新 -> 跳过（理论不会发生）
+            existing=$(gh pr list --head "$branch" --state open --json number,title -q '.[0] | "\(.number) \(.title)"')
+            if [ -n "$existing" ]; then
+              existing_num=${existing%% *}
+              existing_target=${existing##* to }
+              if [ "$existing_target" = "$target" ]; then
+                echo "$name 已存在目标版本相同的 PR (#$existing_num)，跳过"
+                continue
+              fi
+              if [ "$existing_target" = "$(printf '%s\n%s\n' "$existing_target" "$target" | sort -V | head -1)" ]; then
+                echo "PR #$existing_num 的版本 $existing_target 已过期，关闭并由新 PR 取代"
+                gh pr close "$existing_num" --comment "已检测到更新版本 \`${target}\`，本 PR 已过期，自动关闭并由新 PR 取代。"
+              else
+                echo "PR #$existing_num 的版本 $existing_target 比检测结果 $target 还新，跳过"
+                continue
+              fi
             fi
 
             git checkout -B "$branch" origin/main
