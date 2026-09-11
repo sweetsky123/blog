@@ -61,10 +61,10 @@ jobs:
             # - 目标版本一致 -> 跳过
             # - PR 版本已过期 -> 关闭旧 PR，重新提交新 PR
             # - PR 版本比检测结果还新 -> 跳过（理论不会发生）
-            existing=$(gh pr list --head "$branch" --state open --json number,title -q '.[0] | "\(.number) \(.title)"')
-            if [ -n "$existing" ]; then
-              existing_num=${existing%% *}
-              existing_target=${existing##* to }
+            existing_num=$(gh pr list --head "$branch" --state open --json number -q '.[0].number // empty')
+            if [ -n "$existing_num" ]; then
+              existing_title=$(gh pr list --head "$branch" --state open --json title -q '.[0].title')
+              existing_target=${existing_title##* to }
               if [ "$existing_target" = "$target" ]; then
                 echo "$name 已存在目标版本相同的 PR (#$existing_num)，跳过"
                 continue
