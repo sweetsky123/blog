@@ -1,0 +1,4 @@
+User-agent: *
+Crawl-delay: 5
+Sitemap: https://blog.hslzz.cn/sitemap.xml
+Disallow:
