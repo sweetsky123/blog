@@ -73,7 +73,7 @@ avatar:
 disable_top_img: false
 
 # 如果页面未设置横幅，则显示默认的横幅图片
-default_top_img: https://moe.tw/static/background/505f78ebc22384af54ba1e2a6abc0ea2.jpeg
+default_top_img: /img/homepage.jpeg
 
 # 主页的横幅图片
 index_img:
