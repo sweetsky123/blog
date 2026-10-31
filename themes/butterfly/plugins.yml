@@ -76,7 +76,7 @@ egjs_infinitegrid:
   name: '@egjs/infinitegrid'
   other_name: egjs-infinitegrid
   file: dist/infinitegrid.min.js
-  version: 4.13.0
+  version: 4.13.1
 fancybox:
   name: '@fancyapps/ui'
   file: dist/fancybox/fancybox.umd.js
