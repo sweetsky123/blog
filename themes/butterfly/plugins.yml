@@ -142,12 +142,12 @@ pace_default_css:
   name: pace-js
   other_name: pace
   file: themes/blue/pace-theme-minimal.css
-  version: 1.2.4
+  version: 1.3.0
 pace_js:
   name: pace-js
   other_name: pace
   file: pace.min.js
-  version: 1.2.4
+  version: 1.3.0
 pjax:
   name: pjax
   file: pjax.min.js
